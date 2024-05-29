@@ -239,8 +239,7 @@
         <script>
             $(document).ready(function () {
                 $("button").click(function () {
-                    var url = "https://info.dengue.mat.br/api/alertcity?geocode=3520509&disease=dengue&format=json&ew_start=1&ew_end=53&ey_start=2024&ey_end=2024";
-                    $.getJSON(url, function (result) {
+                    $.getJSON("https://www.info.dengue.mat.br/api/alertcity?geocode=3520509&disease=dengue&format=json&ew_start=1&ew_end=53&ey_start=2024&ey_end=2024", function (result) {
                         $.each(result, function (i, field) {
                             $("#res").append(field + " ");
                         });
