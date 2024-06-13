@@ -8,14 +8,17 @@
               href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
               crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
         <link href="css/estilo.css" rel="stylesheet" type="text/css" />
-
 
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <!-- sticky-top -> fixo no topo com espaço com conteúdo abaixo)-->
-            <a class="navbar-brand" href="#">Dengue</a>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/chapeu-de-graduacao.png" style="width: 25px;" alt=""/>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Alterna navegação">
@@ -23,22 +26,24 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
-                    <!-- 
-                        <li class="nav-item active ml-auto">
-                                ml-auto distribui os itens no navbar -> colocar no class do li
-        e no ul -> w-100 (a partir da largura 100px)
-                    -->
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="index.html" title="Página inicial"><i class="bi bi-house"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destaques</a>
+                        <a class="nav-link" href="contato.html" title="entre em contato"><i class="bi bi-input-cursor-text"></i> Fale Conosco</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Preços</a>
+                        <a class="nav-link" href="jquery.html" title="entre em contato"><i class="bi bi-input-cursor-text"></i> JQuery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="calculos.html"
+                            title="entre em contato"><i
+                                class="bi bi-input-cursor-text"></i> Calculos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="validacaoForm.html"
+                            title="entre em contato"><i
+                                class="bi bi-input-cursor-text"></i> Validação JQuery</a>
                     </li>
                 </ul>
             </div>
@@ -51,88 +56,60 @@
             </ul>
         </nav>
 
-        <button>Get JSON data</button>
-        <div id="res"></div>
-
-        <div class="container mt-3">
+        <div class="container mt-3 mb-3">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item active"
-                        aria-current="page">InfoDengue</li>
+                        aria-current="page">Contato</li>
                 </ol>
             </nav>
 
             <div class="row">
-                <div class="col-md-4 col-sm-12 mb-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Título do card</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo
-                                do card</h6>
-                            <p class="card-text">Um exemplo de texto rápido para
-                                construir o título do card e fazer preencher o
-                                conteúdo do card.</p>
-                            <a href="#" class="card-link">Link do card</a>
-                            <a href="#" class="card-link">Outro link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mb-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Título do card</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo
-                                do card</h6>
-                            <p class="card-text">Um exemplo de texto rápido para
-                                construir o título do card e fazer preencher o
-                                conteúdo do card.</p>
-                            <a href="#" class="card-link">Link do card</a>
-                            <a href="#" class="card-link">Outro link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mb-2">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Título do card</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Subtitulo
-                                do card</h6>
-                            <p class="card-text">Um exemplo de texto rápido para
-                                construir o título do card e fazer preencher o
-                                conteúdo do card.</p>
-                            <a href="#" class="card-link">Link do card</a>
-                            <a href="#" class="card-link">Outro link</a>
-                        </div>
-                    </div>
+                <div class="col-md-12 col-sm-12">
+                    <!--
+                    <form>
+                        <label for="txtemail">E-mail</label>
+                        <input type="email" name="txtemail" id="txtemail" placeholder="seu email aqui" maxlength="50" />
+                        <br>
+                        <label for="txtsenha">Senha</label>
+                        <input type="password" name="txtsenha" id="txtsenha" maxlength="8" minlength="8" />
+                        <br >
+                        <input type="submit" name="btnenviar" id="btnenviar" value="Enviar">
+                    </form>
+                    -->
 
-                </div>
-
-            </div><!--fim row-->
-
-            <div class="row">
-                <div class="col-md-8 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <iframe width="100%" height="315"
-                                    src="https://www.youtube.com/embed/S45kHeWnT0M?si=tEM86J_IokliNMW8"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin"
-                                    allowfullscreen></iframe>
+                    <form name="frmenviar" id="frmenviar" method="post">
+                        <div class="form-group">
+                            <label for="txtemail">Endereço de email</label>
+                            <input type="email" class="form-control" id="txtemail" aria-describedby="emailHelp" placeholder="Seu email" name="txtemail">
+                            <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mb-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.304234737327!2d-47.20515972545756!3d-23.085956244297464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b4b183d3173b%3A0xe4e10e5dd84bd49e!2sFatec!5e0!3m2!1spt-BR!2sbr!4v1716983275274!5m2!1spt-BR!2sbr"
-                                width="100%" height="315" style="border:0;"
-                                allowfullscreen loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="form-group">
+                            <label for="txtsenha">Senha</label>
+                            <input type="password" class="form-control" id="txtsenha" placeholder="Senha" name="txtsenha">
                         </div>
-                    </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Clique em mim</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sel_uf">UF</label>
+                            <select class="form-control form-control-lg" id="sel_uf" name="sel_uf">
+                                <option disabled selected>Escolha um estado</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger" name="btnenviar">Enviar</button>
+                        <a href="index.html" title="voltar" class="btn btn-success">Voltar</a>
+                    </form>
                 </div>
             </div>
         </div>
@@ -164,8 +141,7 @@
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <h5>Quick links</h5>
                         <ul class="list-unstyled quick-links">
-                            <li><a href="https://www.fiverr.com/share/qb8D02"><i
-                                        class="fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="https://www.fiverr.com/share/qb8D02"><i class="bi bi-house"></i> Home</a></li>
                             <li><a href="https://www.fiverr.com/share/qb8D02"><i
                                         class="fa fa-angle-double-right"></i>About</a></li>
                             <li><a href="https://www.fiverr.com/share/qb8D02"><i
@@ -234,20 +210,11 @@
         </section>
         <!-- ./Footer -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <script>
-            $(document).ready(function () {
-                $("button").click(function () {
-                    $.getJSON("https://www.info.dengue.mat.br/api/alertcity?geocode=3520509&disease=dengue&format=json&ew_start=1&ew_end=53&ey_start=2024&ey_end=2024", function (result) {
-                        $.each(result, function (i, field) {
-                            $("#res").append(field + " ");
-                        });
-                    });
-                });
-            });
-        </script>
 
+
+        <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
             integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -256,5 +223,7 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+        <script src="js/scripts.js"></script>
     </body>
 </html>
