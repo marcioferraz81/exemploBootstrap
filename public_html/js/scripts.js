@@ -7,8 +7,8 @@ $(document).ready(function () {
      * no exemplo abaixo, mostro a captura de json local e remoto
      */
 
-    //$.getJSON("dados/alertcity.json", function (data) {
-    $.getJSON("https://info.dengue.mat.br/api/alertcity?geocode=3520509&disease=dengue&format=json&ew_start=1&ew_end=53&ey_start=2024&ey_end=2024", function (data) {
+    $.getJSON("dados/alertcity.json", function (data) {
+    //$.getJSON("https://info.dengue.mat.br/api/alertcity?geocode=3520509&disease=dengue&format=json&ew_start=1&ew_end=53&ey_start=2024&ey_end=2024", function (data) {
 
         //data.lenght -> captura do tamanho do array de objetos (json) 
         for (linha = 0; linha < data.length; linha++) {
